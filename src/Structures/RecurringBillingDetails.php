@@ -3,7 +3,6 @@
 
 namespace AubreyKodar\Payfast\Structures;
 
-
 class RecurringBillingDetails
 {
     /**
@@ -37,10 +36,15 @@ class RecurringBillingDetails
      * @param date $billing_date
      * @param float $recurring_amount
      * @param int $frequency
-     * @param $cycles
+     * @param int $cycles
      */
-    public function __construct(int $subscription_type, date $billing_date, float $recurring_amount, int $frequency, $cycles)
-    {
+    public function __construct(
+        int $subscription_type,
+        date $billing_date,
+        float $recurring_amount,
+        int $frequency,
+        int $cycles
+    ) {
         $this->subscription_type = $subscription_type;
         $this->billing_date = $billing_date;
         $this->recurring_amount = $recurring_amount;

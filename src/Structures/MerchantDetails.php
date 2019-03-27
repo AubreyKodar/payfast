@@ -3,7 +3,6 @@
 
 namespace AubreyKodar\Payfast\Structures;
 
-
 class MerchantDetails
 {
     /**
@@ -49,8 +48,13 @@ class MerchantDetails
      * @param string $cancelUrl
      * @param string $notifyUrl
      */
-    public function __construct(int $merchantId, string $merchantKey, string $returnUrl, string $cancelUrl, string $notifyUrl)
-    {
+    public function __construct(
+        int $merchantId,
+        string $merchantKey,
+        string $returnUrl,
+        string $cancelUrl,
+        string $notifyUrl
+    ) {
         $this->merchant_id = $merchantId;
         $this->merchant_key = $merchantKey;
         $this->return_url = $returnUrl;

@@ -3,7 +3,6 @@
 
 namespace AubreyKodar\Payfast\Structures;
 
-
 class TransactionDetails
 {
     /**
@@ -64,8 +63,7 @@ class TransactionDetails
         string $item_description,
         string $custom_int1 = null,
         string $custom_str1 = null
-    )
-    {
+    ) {
         $this->m_payment_id = $m_payment_id;
         $this->amount = $amount;
         $this->item_name = $item_name;

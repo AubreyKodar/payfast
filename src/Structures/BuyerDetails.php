@@ -3,7 +3,6 @@
 
 namespace AubreyKodar\Payfast\Structures;
 
-
 class BuyerDetails
 {
     /**
@@ -28,7 +27,7 @@ class BuyerDetails
     public $email_address;
 
     /**
-     * 	The buyer’s valid cell number
+     *  The buyer’s valid cell number
      *
      * @var string
      */
