@@ -18,10 +18,11 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "phpro/grumphp": "dev-master",
-        "squizlabs/php_codesniffer": "^3.0@dev"
+        "nesbot/carbon": "1.*"
     },
     "require-dev": {
+        "phpro/grumphp": "dev-master",
+        "squizlabs/php_codesniffer": "^3.0@dev"
     },
     "autoload": {
         "psr-4": {
