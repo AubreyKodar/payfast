@@ -1,0 +1,44 @@
+{
+    "name": "aubreykodar/payfast",
+    "description": "Payfast api for Laravel",
+    "keywords": [
+        "aubreykodar",
+        "laravel",
+        "payfast",
+        "payment",
+        "payfast api"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aubrey Kodar",
+            "email": "Hlungwaneak@protonmail.com",
+            "homepage": "https://twitter.com/aubreykodar"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "AubreyKodar\\Payfast\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AubreyKodar\\Payfast\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AubreyKodar\\Payfast\\PayfastServiceProvider"
+            ]
+        }
+    }
+}
