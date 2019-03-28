@@ -50,7 +50,7 @@ class TransactionDetails
     /**
      * TransactionDetails constructor.
      * @param string $m_payment_id
-     * @param string $amount
+     * @param float $amount
      * @param string $item_name
      * @param string $item_description
      * @param string $custom_int1
@@ -58,7 +58,7 @@ class TransactionDetails
      */
     public function __construct(
         string $m_payment_id,
-        string $amount,
+        float $amount,
         string $item_name,
         string $item_description,
         string $custom_int1 = null,

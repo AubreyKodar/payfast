@@ -33,14 +33,14 @@ class RecurringBillingDetails
     /**
      * RecurringBillingDetails constructor.
      * @param int $subscription_type
-     * @param date $billing_date
+     * @param string $billing_date
      * @param float $recurring_amount
      * @param int $frequency
      * @param int $cycles
      */
     public function __construct(
         int $subscription_type,
-        date $billing_date,
+        string $billing_date,
         float $recurring_amount,
         int $frequency,
         int $cycles
