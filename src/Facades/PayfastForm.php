@@ -11,6 +11,6 @@ class PayfastForm extends Facade
      */
     protected static function getFacadeAccessor()
     {
-       return 'aubreykodar.payfast.form';
+        return 'aubreykodar.payfast.form';
     }
 }
