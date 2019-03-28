@@ -1,6 +1,5 @@
 <?php
 
-
 namespace AubreyKodar\Payfast;
 
 use AubreyKodar\Payfast\PayfastApi;
