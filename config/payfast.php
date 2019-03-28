@@ -6,5 +6,5 @@ return [
     'env'=>'',
     'return_url'=>'',
     'cancel_url'=>'',
-    'notify_url'
+    'notify_url'=>''
 ];
