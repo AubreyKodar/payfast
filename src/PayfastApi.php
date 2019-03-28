@@ -5,7 +5,8 @@ namespace AubreyKodar\Payfast;
 
 class PayfastApi extends Payfast
 {
-    public function getSubscriptions()
+    public function ping()
     {
+        dump($this->get('subscription'));
     }
 }

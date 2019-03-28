@@ -3,12 +3,24 @@
 namespace AubreyKodar\Payfast;
 
 use AubreyKodar\Payfast\Structures\BuyerDetails;
-use AubreyKodar\Payfast\Structures\RecurringBillingDetails;
+use AubreyKodar\Payfast\Traits\Payfast as PayfastTrait;
 use AubreyKodar\Payfast\Structures\TransactionDetails;
 use AubreyKodar\Payfast\Structures\TransactionOptions;
+use AubreyKodar\Payfast\Structures\RecurringBillingDetails;
 
 class PayfastFormBuilder extends Payfast
 {
+    use PayfastTrait;
+
+    /**
+     * PayfastFormBuilder constructor.
+     * @throws Exceptions\ConfigNotFoundException
+     */
+    public function __construct()
+    {
+        parent::__construct($this->getEnvironment());
+    }
+
     /**
      * @param BuyerDetails|null $buyerDetails
      * @param TransactionDetails|null $transactionDetails
